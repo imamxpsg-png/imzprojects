@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+// Mengambil variabel dengan toleransi string kosong agar tidak memicu crash saat build server
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://supabase.co';
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
 
-// Objek ini yang diekspor dan dipanggil oleh halaman Tutorial, Store, dan Admin
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
