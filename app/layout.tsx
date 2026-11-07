@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css"; // <-- MENGHUBUNGKAN TAILWIND CSS SECARA GLOBAL
-import Navbar from "@/components/Navbar";
+import "./globals.css"; // <-- PASTIKAN TERTULIS RElATIF SEPERTI INI AGAR CSS AKTIF
+import Navbar from "../components/Navbar"; // <-- Menyesuaikan letak folder components Anda di luar app
 
 export const metadata: Metadata = {
   title: "IMZPROJECT - Platform Digital",
@@ -14,8 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body className="bg-neutral-950 text-white antialiased min-h-screen flex flex-col">
-        {/* Navbar melayang permanen di atas halaman */}
+      <body className="bg-neutral-950 text-white antialiased min-h-screen flex flex-col m-0 p-0">
         <Navbar /> 
         <main className="flex-1 w-full">
           {children}
