@@ -7,24 +7,27 @@ export default function HomePage() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   
+  // 1. URL GAMBAR BACKGROUND SLIDE 1 STABIL & CEPAT DIMUAT
   const slide1Images = [
-    'https://unsplash.com',
-    'https://unsplash.com',
-    'https://unsplash.com',
-    'https://unsplash.com'
+    'https://picsum.photos',
+    'https://picsum.photos',
+    'https://picsum.photos',
+    'https://picsum.photos'
   ];
 
+  // 2. URL LOGO PARTNER SLIDE 2 STABIL (MENGGUNAKAN LOGO RESMI)
   const poweredByImages = [
-    { url: 'https://unsplash.com', text: 'Brand Tech A' },
-    { url: 'https://unsplash.com', text: 'Brand Tech B' },
-    { url: 'https://unsplash.com', text: 'Brand Tech C' },
-    { url: 'https://unsplash.com', text: 'Brand Tech D' },
-    { url: 'https://unsplash.com', text: 'Brand Tech E' },
-    { url: 'https://unsplash.com', text: 'Brand Tech F' },
-    { url: 'https://unsplash.com', text: 'Brand Tech G' },
-    { url: 'https://unsplash.com', text: 'Brand Tech H' }
+    { url: 'https://clearbit.com', text: 'Google Tech' },
+    { url: 'https://clearbit.com', text: 'GitHub Dev' },
+    { url: 'https://clearbit.com', text: 'Vercel Cloud' },
+    { url: 'https://clearbit.com', text: 'Supabase DB' },
+    { url: 'https://clearbit.com', text: 'OpenAI Intelligence' },
+    { url: 'https://clearbit.com', text: 'Microsoft Tech' },
+    { url: 'https://clearbit.com', text: 'Meta Group' },
+    { url: 'https://clearbit.com', text: 'Amazon Web' }
   ];
 
+  // Efek otomatis ganti gambar latar Slide 1 setiap 3 detik
   useEffect(() => {
     const interval = setInterval(() => {
       setBgIndex((prev) => (prev + 1) % slide1Images.length);
@@ -56,7 +59,7 @@ export default function HomePage() {
       className="w-full h-screen overflow-y-scroll snap-y snap-mandatory relative bg-neutral-950 scroll-smooth antialiased"
     >
       
-      {/* SLIDE 1 */}
+      {/* SLIDE 1: Hero Presentasi */}
       <div 
         className="w-full h-screen snap-start flex-shrink-0 bg-cover bg-center flex flex-col items-center justify-center relative transition-all duration-1000"
         style={{ backgroundImage: `url(${slide1Images[bgIndex]})` }}
@@ -67,7 +70,7 @@ export default function HomePage() {
           <span className="text-blue-500 font-bold tracking-[0.3em] uppercase text-xs mb-3 block drop-shadow-md">
             Creative Technology Studio
           </span>
-          <h1 className="text-5xl md:text-7xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-200 to-neutral-400 py-2 drop-shadow-sm">
+          <h1 className="text-5xl md:text-7xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-200 to-neutral-400 py-2 drop-shadow-sm leading-tight">
             WELCOME TO <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">IMZPROJECT</span>
           </h1>
@@ -83,7 +86,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* SLIDE 2 */}
+      {/* SLIDE 2: Powered By Ecosystem */}
       <div className="w-full h-screen snap-start flex-shrink-0 bg-neutral-950 flex flex-col justify-center items-center px-6 relative">
         <div className="text-center mb-12">
           <span className="text-blue-500 font-bold tracking-widest text-xs uppercase block mb-2">Our Trusted Network</span>
@@ -96,8 +99,8 @@ export default function HomePage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl w-full">
           {poweredByImages.map((img, i) => (
             <div key={i} className="group flex flex-col items-center p-6 bg-neutral-900/40 rounded-2xl border border-neutral-800/60 hover:border-neutral-700/80 hover:bg-neutral-900/80 transition-all duration-300 backdrop-blur-sm shadow-xl">
-              <div className="w-20 h-20 rounded-xl overflow-hidden mb-4 bg-neutral-950 flex items-center justify-center p-2 border border-neutral-800 group-hover:scale-105 transition-transform duration-300">
-                <img src={img.url} alt={img.text} className="w-full h-full object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-300" />
+              <div className="w-20 h-20 rounded-xl overflow-hidden mb-4 bg-white flex items-center justify-center p-3 border border-neutral-800 group-hover:scale-105 transition-transform duration-300">
+                <img src={img.url} alt={img.text} className="w-full h-full object-contain" />
               </div>
               <span className="text-xs font-medium tracking-wider text-neutral-400 text-center uppercase group-hover:text-white transition-colors">
                 {img.text}
@@ -107,7 +110,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* SLIDE 3 */}
+      {/* SLIDE 3: Connect Area */}
       <div className="w-full h-screen snap-start flex-shrink-0 bg-gradient-to-b from-neutral-950 via-neutral-950 to-neutral-900 flex flex-col justify-center items-center px-6">
         <div className="text-center mb-10">
           <span className="text-blue-500 font-bold tracking-widest text-xs uppercase block mb-2">Get In Touch</span>
@@ -137,7 +140,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Indikator Bulat Samping Kanan (Perbaikan Array) */}
+      {/* Indikator Bulat Samping Kanan */}
       <div className="fixed right-6 top-1/2 -translate-y-1/2 flex flex-col gap-5 z-40">
         {[0, 1, 2].map((slide) => (
           <button 
