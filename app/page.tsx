@@ -7,7 +7,7 @@ export default function HomePage() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   
-  // 1. URL GAMBAR BACKGROUND SLIDE 1 STABIL & CEPAT DIMUAT
+  // URL gambar background stabil
   const slide1Images = [
     'https://picsum.photos',
     'https://picsum.photos',
@@ -15,7 +15,7 @@ export default function HomePage() {
     'https://picsum.photos'
   ];
 
-  // 2. URL LOGO PARTNER SLIDE 2 STABIL (MENGGUNAKAN LOGO RESMI)
+  // URL logo partner stabil yang dijamin tidak retak hijau
   const poweredByImages = [
     { url: 'https://clearbit.com', text: 'Google Tech' },
     { url: 'https://clearbit.com', text: 'GitHub Dev' },
@@ -27,7 +27,6 @@ export default function HomePage() {
     { url: 'https://clearbit.com', text: 'Amazon Web' }
   ];
 
-  // Efek otomatis ganti gambar latar Slide 1 setiap 3 detik
   useEffect(() => {
     const interval = setInterval(() => {
       setBgIndex((prev) => (prev + 1) % slide1Images.length);
@@ -59,7 +58,7 @@ export default function HomePage() {
       className="w-full h-screen overflow-y-scroll snap-y snap-mandatory relative bg-neutral-950 scroll-smooth antialiased"
     >
       
-      {/* SLIDE 1: Hero Presentasi */}
+      {/* SLIDE 1 */}
       <div 
         className="w-full h-screen snap-start flex-shrink-0 bg-cover bg-center flex flex-col items-center justify-center relative transition-all duration-1000"
         style={{ backgroundImage: `url(${slide1Images[bgIndex]})` }}
@@ -86,7 +85,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* SLIDE 2: Powered By Ecosystem */}
+      {/* SLIDE 2 */}
       <div className="w-full h-screen snap-start flex-shrink-0 bg-neutral-950 flex flex-col justify-center items-center px-6 relative">
         <div className="text-center mb-12">
           <span className="text-blue-500 font-bold tracking-widest text-xs uppercase block mb-2">Our Trusted Network</span>
@@ -110,7 +109,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* SLIDE 3: Connect Area */}
+      {/* SLIDE 3 */}
       <div className="w-full h-screen snap-start flex-shrink-0 bg-gradient-to-b from-neutral-950 via-neutral-950 to-neutral-900 flex flex-col justify-center items-center px-6">
         <div className="text-center mb-10">
           <span className="text-blue-500 font-bold tracking-widest text-xs uppercase block mb-2">Get In Touch</span>
