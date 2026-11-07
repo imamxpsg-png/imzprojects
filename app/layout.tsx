@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css"; // <-- PASTIKAN TERTULIS RElATIF SEPERTI INI AGAR CSS AKTIF
-import Navbar from "../components/Navbar"; // <-- Menyesuaikan letak folder components Anda di luar app
+import "./globals.css"; 
+import Navbar from "../components/Navbar"; 
 
 export const metadata: Metadata = {
   title: "IMZPROJECT - Platform Digital",
@@ -14,9 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body className="bg-neutral-950 text-white antialiased min-h-screen flex flex-col m-0 p-0">
+      <body className="bg-neutral-950 text-white antialiased min-h-screen flex flex-col m-0 p-0 overflow-hidden">
         <Navbar /> 
-        <main className="flex-1 w-full">
+        <main className="flex-1 w-full h-full">
           {children}
         </main>
       </body>
