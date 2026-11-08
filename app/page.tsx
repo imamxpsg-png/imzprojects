@@ -15,7 +15,7 @@ export default function HomePage() {
   ];
 
   const poweredByImages = [
-    { url: 'https://picsum.photos', text: 'Google Tech' },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUuQjgdwPqzxui3v3W6onjs3BEZUaYAoxUlTS2MpAmXaYcYDegPOXjeWcu&s=10', text: 'SMKN 2 SALATIGA' },
     { url: 'https://picsum.photos', text: 'GitHub Dev' },
     { url: 'https://picsum.photos', text: 'Vercel Cloud' },
     { url: 'https://picsum.photos', text: 'Supabase DB' },
