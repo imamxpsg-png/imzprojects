@@ -13,7 +13,7 @@ export async function POST(req: Request) {
       },
       body: JSON.stringify({
         // PERBAIKAN 2: Menggunakan nama model Groq Llama 3 yang valid dan super cepat
-        model: "llama3-8b-8192", 
+        model: "openai/gpt-oss-20b", 
         messages: [{ role: "user", content: prompt }]
       })
     });
