@@ -8,10 +8,10 @@ export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slide1Images = [
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoi9MV5RBpiRa1hU71nhq05JYw6MUcXK1ZHH9aKXfMuw&s=10',
-    'https://i0.wp.com/global.unair.ac.id/wp-content/uploads/2024/07/Osaka.jpg?resize=803%2C535&ssl=1',
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzfIx0cXb0egNFZfKkq_z_zbdHv84nsBHOrjEdg9kL8PEVBtKh1dWw_w&s=10',
-    'https://picsum.photos'
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFvUyL3AT6vlW_xsAhhEXgCslD3CK_X8VOTYLJo6lvhFiaiON-klvy-RE&s=10',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJGoEJYEyO9JjxlA56VRNhiOiL6emZdFAc2ONlN_PCXdad9kysGe3kc4M-&s=10',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH9PrRfhoyjeB6lG50FMN9c4yX8HLA5ivqFFDQufod3w&s=10',
+    'https://static.gltjp.com/glt/data/article/21000/20183/20260710_155525_45604efc_w1920.webp'
   ];
 
   const poweredByImages = [
