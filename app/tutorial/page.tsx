@@ -28,7 +28,7 @@ export default function TutorialPage() {
       <div className="max-w-4xl mx-auto">
         <div className="border-b border-neutral-800 pb-6 mb-10">
           <span className="text-xs font-bold tracking-[0.3em] text-blue-500 uppercase block mb-1">Modul Praktikum</span>
-          <h1 className="text-3xl font-black text-white uppercase">DAFTAR JOBSHEET DEBIAN</h1>
+          <h1 className="text-3xl font-black text-white uppercase">DAFTAR JOBSHEET</h1>
         </div>
 
         {loading && <p className="text-neutral-500 animate-pulse text-sm">Memuat daftar dokumen...</p>}
