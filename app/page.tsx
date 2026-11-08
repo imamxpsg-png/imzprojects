@@ -16,12 +16,12 @@ export default function HomePage() {
 
   const poweredByImages = [
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUuQjgdwPqzxui3v3W6onjs3BEZUaYAoxUlTS2MpAmXaYcYDegPOXjeWcu&s=10', text: 'SMKN 2 SALATIGA' },
-    { url: 'https://picsum.photos', text: 'GitHub Dev' },
-    { url: 'https://picsum.photos', text: 'Vercel Cloud' },
+    { url: 'https://www.tt.emb-japan.go.jp/files/100050878.jpg', text: 'Mext Scholarship' },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR24UV5-wJhPNSF3IgnX2cGbYkiElk3Vzav3OT0Ez5dRA&s=10', text: 'Next.js' },
     { url: 'https://picsum.photos', text: 'Supabase DB' },
     { url: 'https://picsum.photos', text: 'OpenAI Intel' },
     { url: 'https://picsum.photos', text: 'Microsoft' },
-    { url: 'https://picsum.photos', text: 'Meta Group' },
+    { url: 'https://givery-consulting.com/wp-content/themes/givery-consulting-corp/og.png', text: 'Givery Japan' },
     { url: 'https://picsum.photos', text: 'Amazon Web' }
   ];
 
