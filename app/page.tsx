@@ -117,13 +117,13 @@ export default function HomePage() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-4 w-full max-w-3xl justify-center items-center">
-          <a href="https://wa.me" target="_blank" rel="noopener noreferrer" 
+          <a href="https://wa.me/6283113073619" target="_blank" rel="noopener noreferrer" 
              className="group flex flex-col items-start w-full md:w-60 p-4 bg-neutral-900/50 text-white rounded-xl border border-neutral-800 hover:border-emerald-500/50 hover:bg-neutral-900/80 transition-all duration-300 shadow-xl">
             <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1">WhatsApp (W2A)</span>
             <span className="text-xs md:text-sm font-light text-neutral-400 group-hover:text-neutral-200 transition-colors">Hubungi Admin Respons Cepat</span>
           </a>
           
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+          <a href="www.linkedin.com/in/imam-lukman-nurhakim-425189410" target="_blank" rel="noopener noreferrer"
              className="group flex flex-col items-start w-full md:w-60 p-4 bg-neutral-900/50 text-white rounded-xl border border-neutral-800 hover:border-blue-500/50 hover:bg-neutral-900/80 transition-all duration-300 shadow-xl">
             <span className="text-xs font-bold text-blue-400 uppercase tracking-wider mb-1">LinkedIn Network</span>
             <span className="text-xs md:text-sm font-light text-neutral-400 group-hover:text-neutral-200 transition-colors">Hubungkan Secara Profil</span>
