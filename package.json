@@ -17,6 +17,10 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.0",
-    "postcss": "^8.x.x"
+    "postcss": "^8.x.x",
+    "typescript": "^5.x.x",
+    "@types/node": "^20.x.x",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0"
   }
 }
