@@ -55,7 +55,7 @@ export default function AIAssistantPage() {
         {/* Header */}
         <div className="p-4 border-b border-gray-800 bg-gray-900/50 rounded-t-xl flex items-center gap-3">
           <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
-          <h2 className="font-bold text-sm tracking-wider uppercase text-blue-400">Givery AI Assistant</h2>
+          <h2 className="font-bold text-sm tracking-wider uppercase text-blue-400">Imz AI Assistant</h2>
         </div>
 
         {/* Kotak Obrolan Chat */}
