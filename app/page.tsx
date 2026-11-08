@@ -16,13 +16,13 @@ export default function HomePage() {
 
   const poweredByImages = [
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUuQjgdwPqzxui3v3W6onjs3BEZUaYAoxUlTS2MpAmXaYcYDegPOXjeWcu&s=10', text: 'SMKN 2 SALATIGA' },
-    { url: 'https://www.tt.emb-japan.go.jp/files/100050878.jpg', text: 'Mext Scholarship' },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeyAuwaqYOwhibgMvVXOVVf7lhNQZaEzdALqsSwyyFnw&s', text: 'Japan DEV' },
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR24UV5-wJhPNSF3IgnX2cGbYkiElk3Vzav3OT0Ez5dRA&s=10', text: 'Next.js' },
     { url: 'https://course-net.com/wp-content/uploads/2025/03/GitHub-logo-scaled-1.webp', text: 'GitHub' },
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0J4g2qTrVjOBNmi0IX0e8sAJKg3hywPv-qbu_SyxjmA&s=10', text: 'Netlify' },
     { url: 'https://framerusercontent.com/images/ky3fUz6Uuqp1BqWWii7LO1PPAY.webp?width=750&height=422', text: 'Supabase' },
-    { url: 'https://givery-consulting.com/wp-content/themes/givery-consulting-corp/og.png', text: 'Givery Japan' },
-    { url: 'https://i.scdn.co/image/ab6765630000ba8a453123ca61c1045ec6842e79', text: 'Japan DEV' }
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyc9RsVtz6kZFAIIatXJmhSI_FRQQASYWkNwKfOIKAduXgxfIWDCNj6Bk&s=10', text: 'Vercel' },
+    { url: 'https://idwebhost.com/themes/freshblue/images/og-logo.png', text: 'IDWebhost' }
   ];
 
   useEffect(() => {
